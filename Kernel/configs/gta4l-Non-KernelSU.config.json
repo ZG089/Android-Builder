@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "gta4l-Non-KernelSU",
       "repo": "https://github.com/YFMARCO/android_kernel_samsung_gta4l",
-      "branch": "14.0",
+      "branch": "14.1",
       "device": "gta4l",
       "defconfig": "gta4l_eur_open_defconfig"
     },
