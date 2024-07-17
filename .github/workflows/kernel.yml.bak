@@ -75,10 +75,10 @@ jobs:
       CCACHE_DIR: "${{ github.workspace }}/ccache"
     steps:
       # Set swap space
-      - name: 📐 Set swap to 20G
+      - name: 📐 Set swap to 10G
         uses: pierotofy/set-swap-space@master
         with:
-          swap-size-gb: 20
+          swap-size-gb: 10
 
       # This action checks-out your CONFIGSitory under $GITHUB_WORKSPACE, so your workflow can access it.
       - name: 😄 Checkout
@@ -147,7 +147,7 @@ jobs:
             if echo $toolchain | jq -e 'has("url")' > /dev/null; then
               # If from archive
               toolchain_url=$(echo $toolchain | jq -r ".url")
-              mkdir -p '$toolchain_name'
+              mkdir -p $toolchain_name
 
               # Download archive
               wget "$toolchain_url"
@@ -242,7 +242,7 @@ jobs:
           fi
 
           # Apply new KernelSU patches
-          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
+          curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
 
           echo -e "CONFIG_KPROBES=y" >> arch/${{ env.ARCH }}/configs/${{ env.KERNEL_DEFCONFIG_PATH }}
           echo -e "CONFIG_HAVE_KPROBES=y" >> arch/${{ env.ARCH }}/configs/${{ env.KERNEL_DEFCONFIG_PATH }}
@@ -408,7 +408,7 @@ jobs:
 
       - name: "💾 Upload AnyKernel3 image => (${{ env.BUILD_DATE }})"
         env:
-          ANYKERNEL3_FILE: "SpartaKernel-${{ env.KERNEL_NAME }}-${{ env.BUILD_DATE }}"
+          ANYKERNEL3_FILE: "AnyKernel3-${{ env.KERNEL_NAME }}-${{ env.BUILD_DATE }}"
         uses: actions/upload-artifact@v3
         if: ${{ env.USE_ANYKERNEL3 == 'true' }}
         with:
