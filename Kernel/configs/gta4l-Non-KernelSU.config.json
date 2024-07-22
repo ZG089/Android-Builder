@@ -1,7 +1,7 @@
 [
   {
        "kernelSource": {
-      "name": "Samsung Tab A7(gta4l)",
+      "name": "Samsung Tab A7 (gta4l) ",
       "repo": "https://github.com/YFMARCO/android_kernel_samsung_gta4lxx.git",
       "branch": "twrp",
       "device": "gta4l",
