@@ -9,8 +9,8 @@
     },
     "toolchains": [
       {
-        "repo": "https://gitlab.com/dkpost3/neutron-clang.git",
-        "branch": "Neutron-16",
+        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
+        "branch": "18",
         "name": "clang",
         "binaryEnv": [
           "bin"
