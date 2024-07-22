@@ -3,14 +3,14 @@
     "kernelSource": {
       "name": "gta4l-Non-KernelSU",
       "repo": "https://github.com/YFMARCO/android_kernel_samsung_gta4lxx",
-      "branch": "selinux",
+      "branch": "twrp-12.1",
       "device": "gta4l",
       "defconfig": "gta4l_eur_open_defconfig"
     },
     "toolchains": [
       {
-        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone.git",
-        "branch": "18",
+        "repo": "https://github.com/kdrag0n/proton-clang.git",
+        "branch": "master",
         "name": "clang",
         "binaryEnv": [
           "bin"
