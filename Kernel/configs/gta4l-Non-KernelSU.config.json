@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "SamsungTabA7（gta4l）",
-      "repo": "https://github.com/YFMARCO/android_kernel_samsung_gta4lxx.git",
-      "branch": "twrp",
-      "device": "gta4l",
-      "defconfig": "gta4l_eur_open_defconfig"
+      "repo": "https://github.com/CuriousNom/android_kernel_samsung_gta4lwifi.git",
+      "branch": "14.0",
+      "device": "gta4lwifi",
+      "defconfig": "gta4lwifi_eur_open_defconfig"
     },
     "toolchains": [
       {
