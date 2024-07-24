@@ -2,7 +2,7 @@
   {
     "kernelSource": {
       "name": "SamsungTabA7（gta4l）",
-      "repo": "https://github.com/YFMARCO/android_kernel_samsung_gta4lxx.git",
+      "repo": "https://github.com/YFMARCO/android_kernel_samsung_gta4l.git",
       "branch": "14.0",
       "device": "gta4l",
       "defconfig": "gta4l_eur_open_defconfig"
