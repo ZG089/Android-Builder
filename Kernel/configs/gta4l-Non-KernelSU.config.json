@@ -5,7 +5,7 @@
       "repo": "https://github.com/YFMARCO/kernel_test1",
       "branch": "master",
       "device": "gta4l",
-      "defconfig": "/gta4l_mea_jt_defconfig"
+      "defconfig": "/gta4l_mea_open_defconfig"
     },
     "toolchains": [
       {
