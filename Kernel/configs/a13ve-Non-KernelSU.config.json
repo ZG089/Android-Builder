@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "gta4l-Non-KernelSU",
+      "name": "a13ve-Non-KernelSU",
       "repo": "https://github.com/YFMARCO/kernel-a13ve-test",
-      "branch": "master",
+      "branch": "a13ve",
       "device": "a13ve",
       "defconfig": "/a13ve_defconfig"
     },
