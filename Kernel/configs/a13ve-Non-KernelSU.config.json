@@ -2,16 +2,16 @@
   {
     "kernelSource": {
       "name": "gta4l-Non-KernelSU",
-      "repo": "https://github.com/YFMARCO/kernel_test1",
+      "repo": "https://github.com/YFMARCO/kernel-a13ve-test",
       "branch": "master",
-      "device": "gta4l",
-      "defconfig": "/gta4l_mea_jt_defconfig"
+      "device": "a13ve",
+      "defconfig": "/a13ve_defconfig"
     },
     "toolchains": [
       {
-        "repo": "https://github.com/kdrag0n/proton-clang",
-        "branch": "master",
-        "name": "proton-clang",
+        "repo": "https://github.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6443078.git",
+        "branch": "10.0",
+        "name": "clang-r383902",
         "binaryEnv": [
           "bin"
         ]
@@ -61,7 +61,7 @@
       "release": true,
       "custom": {
         "repo": "https://github.com/YFMARCO/AnyKernel3/",
-        "branch": "gta4l"
+        "branch": "a13ve"
       }
     },
     "enableKernelSU": false,
