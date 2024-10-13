@@ -89,7 +89,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt install -y build-essential bc gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev libfl-dev        
-          sudo apt install -y curl git ftp lftp wget libarchive-tools ccache python2 python2-dev
+          sudo apt install curl git ftp lftp wget libarchive-tools ccache python2 python2-dev
           sudo apt install -y zip unzip tar gzip bzip2 rar unrar
           
       # Initialize ccache
